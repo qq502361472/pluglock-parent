@@ -1,0 +1,2 @@
+io.pluglock.redis.spi.JedisConnectionFactoryImpl
+io.pluglock.redis.spi.LettuceConnectionFactoryImpl
