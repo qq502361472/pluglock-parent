@@ -6,11 +6,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.pluglock</groupId>
-    <artifactId>pluglock-parent</artifactId>
+    <artifactId>pluglock</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>PlugLock Parent</name>
+    <name>PlugLock</name>
     <description>Plugin-based distributed lock framework</description>
 
     <modules>

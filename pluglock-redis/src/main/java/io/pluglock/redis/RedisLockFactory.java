@@ -11,7 +11,7 @@ public class RedisLockFactory implements LockFactory {
     @Override
     public PLock createLock(String name, LockConfig config) {
         // TODO: 实现Redis锁的创建逻辑
-        throw new UnsupportedOperationException("Redis lock not implemented yet");
+        return null;
     }
 
     @Override

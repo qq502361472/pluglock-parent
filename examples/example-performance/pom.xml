@@ -7,7 +7,7 @@
 
     <parent>
         <groupId>io.pluglock</groupId>
-        <artifactId>pluglock-parent</artifactId>
+        <artifactId>pluglock</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
