@@ -88,6 +88,7 @@ public abstract class PReentrantLock extends AbstractPLock {
 
     @Override
     public void unlock() {
+        lockResource.releaseResource(getName(), Thread.currentThread().getId());
     }
 
     @Override

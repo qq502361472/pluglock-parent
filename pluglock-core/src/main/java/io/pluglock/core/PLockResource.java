@@ -40,4 +40,12 @@ public interface PLockResource {
      * @return 锁过期时间
      */
     Long tryAcquireResource(String name, long threadId);
+
+    /**
+     * 释放锁资源
+     *
+     * @param name      锁资源名称
+     * @param threadId  线程ID
+     */
+    void releaseResource(String name, long threadId);
 }

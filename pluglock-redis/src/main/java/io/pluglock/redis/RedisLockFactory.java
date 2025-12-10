@@ -10,7 +10,8 @@ import io.pluglock.core.PLock;
 public class RedisLockFactory implements LockFactory {
     @Override
     public PLock createLock(String name, LockConfig config) {
-        // TODO: 实现Redis锁的创建逻辑
+        RedisPLockResource lockResource = new RedisPLockResource();
+        // TODO: 实现PLock的具体创建逻辑
         return null;
     }
 
