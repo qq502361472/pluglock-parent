@@ -10,6 +10,9 @@ import java.util.concurrent.locks.Condition;
  */
 public abstract class PReentrantLock extends AbstractPLock {
 
+    /**
+     * 锁资源
+     */
     protected PLockResource lockResource;
 
     /**

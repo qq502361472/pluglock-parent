@@ -1,6 +1,5 @@
 package io.pluglock.core;
 
-import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 /**
