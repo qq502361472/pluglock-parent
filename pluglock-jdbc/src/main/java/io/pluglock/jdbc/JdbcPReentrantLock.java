@@ -1,11 +1,11 @@
 package io.pluglock.jdbc;
 
-import io.pluglock.core.AbstractPReentrantLock;
+import io.pluglock.core.PReentrantLock;
 
 /**
  * 基于JDBC的可重入锁实现
  */
-public class JdbcPReentrantLock extends AbstractPReentrantLock {
+public class JdbcPReentrantLock extends PReentrantLock {
     
     private final JdbcHelper jdbcHelper;
     private final int expireTimeSeconds;
@@ -19,14 +19,5 @@ public class JdbcPReentrantLock extends AbstractPReentrantLock {
         this.jdbcHelper = jdbcHelper;
         this.expireTimeSeconds = expireTimeSeconds;
     }
-    
-    @Override
-    protected boolean acquireLock(String lockValue) {
-        return jdbcHelper.tryAcquireLock(lockName, lockValue, expireTimeSeconds);
-    }
-    
-    @Override
-    protected void releaseLock(String lockValue) {
-        jdbcHelper.releaseLock(lockName, lockValue);
-    }
+
 }
