@@ -29,6 +29,11 @@ public abstract class AbstractPLockResource implements PLockResource {
         return 0L;
     }
 
+    @Override
+    public Long tryAcquireResource(String name, long threadId, long leaseTime) {
+        return 0L;
+    }
+
     protected abstract void startWatchDog(String name, long threadId, long leaseMillis, Long ttl);
 
     public long getIntervalLeaseTime() {

@@ -92,11 +92,6 @@ public class JedisPLockResource extends RedisPLockResource {
             }
         }
     }
-
-    @Override
-    public Long tryAcquireResource(String name, long threadId, long leaseTime) {
-        return 0L;
-    }
     
     /**
      * 获取通道名称

@@ -124,11 +124,6 @@ public class LettucePLockResource extends RedisPLockResource {
         }
     }
 
-    @Override
-    public Long tryAcquireResource(String name, long threadId, long leaseTime) {
-        return null;
-    }
-    
     /**
      * 从通道名解析出锁名称
      * 
